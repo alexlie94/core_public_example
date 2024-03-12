@@ -1,0 +1,38 @@
+.mobile-menu-top {
+	position: fixed;
+	top: 60px;
+	z-index: 101;
+	width: 100%;
+	left: 0;
+  }
+  
+
+  .mobile-filter-show-bottom {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	z-index: 101;
+	border-radius: 50px 50px 0 0;
+	/* pointer-events: none; */
+  }
+
+  .mobile-filter-show-bottom.open {
+	opacity: 1;
+	pointer-events: auto;
+	transform: translateX(-50%) translateY(0%);
+}
+
+
+.block {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ion-modal {
+    --height: auto;
+  }
